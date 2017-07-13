@@ -1,0 +1,309 @@
+// Variables
+$slick-font-path: "./fonts/" !default
+$slick-font-family: "slick" !default
+$slick-loader-path: "./" !default
+$slick-dot-color: black !default
+$slick-dot-color-active: $slick-dot-color !default
+$slick-prev-character: "\2190" !default
+$slick-next-character: "\2192" !default
+$slick-dot-character: "\2022" !default
+$slick-dot-size: 1rem !default
+$slick-opacity-default: 0.75 !default
+$slick-opacity-on-hover: 1 !default
+$slick-opacity-not-active: 0.25 !default
+$slider__text-default: #424242
+$slider__white: #f9f9f9
+$slider__orange: #E64A19
+
+// Component
+.slick-slider
+  display: block
+  position: relative
+  -ms-touch-action: pan-y
+  touch-action: pan-y
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  -webkit-tap-highlight-color: transparent
+  @media (max-width: 767px)
+    margin-left: 0
+
+.slick-list
+  display: block
+  margin: 0
+  overflow: hidden
+  padding: 0
+  position: relative
+  &:focus
+    outline: none
+  &.dragging
+    cursor: pointer
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+  -webkit-transform: translate3d(0, 0, 0)
+  -moz-transform: translate3d(0, 0, 0)
+  -ms-transform: translate3d(0, 0, 0)
+  -o-transform: translate3d(0, 0, 0)
+  transform: translate3d(0, 0, 0)
+
+.slick-track
+  display: block
+  left: 0
+  position: relative
+  top: 0
+  &:before,
+  &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+  .slick-loading &
+    visibility: hidden
+
+.slick-slide
+  height: 100%
+  float: left
+  min-height: 0.0625rem
+  [dir="rtl"] &
+  float: right
+  img 
+    display: block
+  &.slick-loading img
+    display: none
+  &.dragging img
+    pointer-events: none
+  .slick-initialized &
+    display: block
+  .slick-loading &
+    visibility: hidden
+  .slick-vertical &
+    border: 0.0625rem solid transparent
+    display: block
+    height: auto
+
+.slick-arrow.slick-hidden
+  display: none
+
+@function slick-image-url($url)
+  @if function-exists(image-url)
+    @return image-url($url)
+  @else
+    @return url($slick-loader-path + $url)
+
+@function slick-font-url($url)
+  @if function-exists(font-url)
+    @return font-url($url)
+  @else
+    @return url($slick-font-path + $url)
+
+// .slick-list
+//   .slick-loading &
+//     background: #red slick-image-url("ajax-loader.gif") center center no-repeat
+
+/* Icons */
+@if $slick-font-family == "slick"
+  @font-face
+    font-family: "slick"
+    font-style: normal
+    font-weight: normal
+    src: slick-font-url("slick.eot")
+    src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff")
+
+/* Arrows */
+.slick-prev,
+.slick-next
+  background: transparent
+  border: none
+  cursor: pointer
+  display: block
+  height: 1.25rem
+  font-size: 0px
+  line-height: 0px
+  outline: none
+  padding: 0
+  position: absolute
+  top: 50%
+  -webkit-transform: translate(0, -50%)
+  -ms-transform: translate(0, -50%)
+  transform: translate(0, -50%)
+  width: 1.25rem
+  &:hover, &:focus
+    background: transparent
+    color: transparent
+    outline: none
+    &:before
+      opacity: $slick-opacity-on-hover
+  &.slick-disabled:before
+    opacity: $slick-opacity-not-active
+  &:before
+    font-family: $slick-font-family
+    font-size: 1.25rem
+    line-height: 1
+    // color: $slick-arrow-color
+    opacity: $slick-opacity-default
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+.slick-prev
+  left: -1.5625rem
+  [dir="rtl"] &
+    left: auto
+    right: -1.5625rem
+  &:before
+    content: $slick-prev-character
+    [dir="rtl"] &
+      content: $slick-next-character
+
+.slick-next
+  right: -1.5625rem
+  [dir="rtl"] &
+    left: -1.5625rem
+    right: auto
+  &:before
+    content: $slick-next-character
+    [dir="rtl"] &
+      content: $slick-prev-character
+
+/* Dots */
+.slick-dotted.slick-slider
+  margin-bottom: 1.875rem
+
+.slick-dots
+  // bottom: -1.64rem
+  display: block
+  list-style: none
+  margin: 4rem auto 0
+  padding: 0
+  // position: absolute
+  text-align: center
+  // width: 100%
+  li
+    display: inline-block
+    cursor: pointer
+    height: 1.25rem
+    margin: 0 0.3125rem
+    padding: 0
+    position: relative
+    width: 1.25rem
+    button
+      background: transparent
+      border: 0
+      color: transparent
+      cursor: pointer
+      display: block
+      font-size: 0
+      height: 1.25rem
+      line-height: 0
+      outline: none
+      padding: 0.3125rem
+      width: 1.25rem
+      &:hover, &:focus
+        outline: none
+        &:before
+          opacity: $slick-opacity-on-hover
+      &:before
+        color: $slick-dot-color
+        content: $slick-dot-character
+        font-family: $slick-font-family
+        font-size: $slick-dot-size
+        height: 1.25rem
+        line-height: 1.25rem
+        left: 0
+        opacity: $slick-opacity-not-active
+        position: absolute
+        text-align: center
+        top: 0
+        -webkit-font-smoothing: antialiased
+        -moz-osx-font-smoothing: grayscale
+        width: 1.25rem
+    &.slick-active button:before
+      color: $slick-dot-color-active
+      opacity: $slick-opacity-default
+
+.slider__item
+  position: relative
+  min-height: 600px
+  @media (max-width: 767px)
+    min-height: none
+.slider__item-adaptive-height
+    min-height: none
+
+.slider__title
+  font-family: "Anglecia Pro Dsp", serif
+  font-size: 3.4rem
+  letter-spacing: 0.1rem
+  margin-left: 0.6rem
+  @media (max-width: 767px)
+    display: block
+    font-size: 1.7rem
+    padding: 1rem 0
+    text-align: center
+
+.slider__img
+  height: 400px
+  position: absolute
+  right: 0
+  top: 10%
+  z-index: -1
+  @media (max-width: 767px)
+    height: auto
+    position: relative
+    margin: 0 auto
+    width: 90%
+
+.slider__price
+  bottom: 3rem
+  font-family: "Anglecia Pro Dsp", serif
+  font-size: 5rem
+  position: absolute
+  right: 1rem
+  @media (max-width: 767px)
+    display: block
+    font-size: 3rem
+    left: 0.3rem
+    position: relative
+    text-align: center
+  @media (min-width: 768px) and (max-width: 991px)
+    font-size: 3.3rem
+
+.slider__description
+  padding: 2rem 0 0 0.6rem
+  width: 70%
+  p
+    line-height: 1.8rem
+  @media (max-width: 767px)
+    margin: 0 auto
+    padding: 0 0 2.6rem 0.6rem
+    width: 95%
+  @media (min-width: 768px) and (max-width: 991px)
+    padding: 3rem 0 1.5rem 0.6rem
+    width: 50%
+    p
+      line-height: 1.55rem
+  @media (min-width: 992px) and (max-width: 1199px)
+    width: 62%
+
+.slider__btn
+  color: $slider__text-default
+  font-style: italic
+  text-decoration: none
+  &:hover,
+  &:active
+    text-decoration: underline
+  @media (max-width: 767px)
+    background-color: $slider__orange
+    border-radius: 0.3125rem
+    color: $slider__white
+    display: block
+    font-style: normal
+    padding: 0.6rem 1rem
+    text-transform: uppercase
+    text-align: center
+    &:hover
+      background-color: transparent
+      color: $slider__text-default
+      text-decoration: none

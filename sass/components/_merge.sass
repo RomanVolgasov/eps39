@@ -1,0 +1,77 @@
+// Variables
+$merge__gray: #E0E0E0
+$merge__dark: #424242
+$merge__white: #F5F5F5
+$merge__orange: #E64A19
+
+// Component
+.merge
+  background-color: $merge__gray
+  padding-bottom: 3rem
+  margin-top: 3rem
+  font-weight: 300
+  @media (max-width: 767px)
+    padding-bottom: 2rem
+    margin-top: 4rem
+
+.merge_psb
+  border-right: 0.0625rem solid $merge__dark
+  @media (max-width: 767px)
+    border: none
+
+.merge__decription
+  p
+    line-height: 1.4rem
+    
+
+.merge__decription_subtitle
+  border-bottom: 0.0625rem solid $merge__dark
+  padding: 1.2rem 0
+  font-weight: bold
+  @media (min-width: 768px) and (max-width: 991px)
+    font-size: 0.9rem
+
+.merge__col
+  &::before,
+  &::after
+    content: ""
+    background-color: $merge__dark
+    border-radius: 3.125rem
+    display: inline-block
+    height: 1rem
+    position: relative
+  @media (max-width: 767px)
+    &::before,
+    &::after
+      display: none
+
+
+.merge__col-left
+  width: 103%
+  text-align: right
+  &::after
+    margin-left: 2rem
+    right: -0.5rem
+    top: 2.15rem
+    width: 1rem
+  @media (min-width: 768px) and (max-width: 991px)
+    &::after
+      margin-left: 0
+      right: -0.8rem
+  @media (max-width: 767px)
+    width: 100%
+    text-align: justify
+
+.merge__col-right
+  margin-left: -0.9rem
+  text-align: left
+  &::before
+    margin-right: 2rem
+    left: -0.6rem
+    top: 2.15rem
+    width: 1rem
+  @media (min-width: 768px) and (max-width: 991px)
+    &::before
+      left: -0.6rem
+      top: 2.15rem
+      width: 1rem

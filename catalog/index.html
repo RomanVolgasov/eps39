@@ -19,6 +19,7 @@
     <!-- ☢ Подключение CSS ☢ -->
     <link rel="stylesheet" type="text/css" href="../../css/main.css">
 
+
     <!-- ⚠️ Подключение в web-master ⚠️ -->
     
     <!-- ⚠️ Favicon для всех случаев генерируется тут: http://realfavicongenerator.net/ ⚠️ -->
@@ -36,14 +37,15 @@
   </head>
 
   <body class="hyphenate">
+    <div id="outdated"></div>
     <header class="container" id="top">
       <div class="row">
         <div class="col-xs-12 header">
-          <h1 class="hidden-xs hidden-sm hidden-md hidden-lg">Ассортимент пенополистирола</h1>
+          <h1 class="hidden-xs hidden-sm hidden-md hidden-lg">Пенополистирол собственное производство</h1>
           <div class="top-menu top-menu__grid">
             <a class="top-nav__logo" href="/"></a>
             <nav id="navigation" class="top-nav__list">
-              <a href="catalog/" class="top-nav__item -link active">Каталог</a>
+              <a href="../catalog/" class="top-nav__item -link active">Каталог</a>
               <a href="#" class="top-nav__item -link">О компании</a>
               <a href="#" class="top-nav__item -link">Технология</a>
               <a href="#" class="top-nav__item -link top-nav__item_btn">Купить пенополистирол</a>
@@ -59,7 +61,188 @@
         </div>
       </div>
     </header>
-  <!-- ☢ Подключаем скрипты ☢ -->
+    <section class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="donthyphenate">Каталог</h2>
+        </div>
+        <nav class="col-xs-12">
+          <ul class="catalog-list controls">
+            <li class="filter top-nav__item" data-filter=".all">Всё</li>
+            <li class="filter top-nav__item" data-filter=".psb25">Пенополистирол на фасад</li>
+            <li class="filter top-nav__item" data-filter=".psb35">Пенополистирол на пол</li>
+            <li class="filter top-nav__item" data-filter=".psb15">Пенополистирол для перегородок</li>
+          </ul>
+        </nav>
+        <div class="col-xs-12 catalog-grid">
+          <div class="mix catalog-item psb15 all">
+            <figure class="catalog-item__figure">
+              <img class="img-responsive img-rounded" src="../img/eps-item.png" alt="ПСБ-15 ТУ">
+              <figcaption class="catalog-item__caption">ПСБ-15 ТУ</figcaption>
+            </figure>
+            <table class="catalog-item__table">
+              <tr>
+                <td>Толщины:</td>
+                <td>50 / 80 / 100 мм</td>
+              </tr>
+              <tr>
+                <td>В упаковке:</td>
+                <td>12 / 7 / 6 шт</td>
+              </tr>
+              <tr>
+                <td>Плотность:</td>
+                <td>9 кг/м<sup>3</sup></td>
+              </tr>
+            </table>
+            <span class="catalog-item__price">1299 руб. м<sup>3</sup></span>
+            <a class="btn-flat orange btn-responsive-center" href="#psb15tu" title="ПСБ-15 ТУ">Подробнее</a>
+          </div>
+          <div class="mix catalog-item psb15 all">
+            <figure class="catalog-item__figure">
+              <img class="img-responsive img-rounded" src="../img/eps-item.png" alt="ПСБ-15 ГОСТ">
+              <figcaption class="catalog-item__caption">ПСБ-15 ГОСТ</figcaption>
+            </figure>
+            <table class="catalog-item__table">
+              <tr>
+                <td>Толщины:</td>
+                <td>30 / 50 / 80 / 100 мм</td>
+              </tr>
+              <tr>
+                <td>В упаковке:</td>
+                <td>20 / 12 / 7 / 6 шт</td>
+              </tr>
+              <tr>
+                <td>Плотность:</td>
+                <td>11 кг/м<sup>3</sup></td>
+              </tr>
+            </table>
+            <span class="catalog-item__price">1699 руб. м<sup>3</sup></span>
+            <a class="btn-flat orange btn-responsive-center" href="#psb15gost" title="ПСБ-15 ГОСТ">Подробнее</a>
+          </div>
+          <div class="mix catalog-item psb25 all">
+            <figure class="catalog-item__figure">
+              <img class="img-responsive img-rounded" src="../img/eps-item.png" alt="ПСБ-25 ТУ">
+              <figcaption class="catalog-item__caption">ПСБ-25 ТУ</figcaption>
+            </figure>
+            <table class="catalog-item__table">
+              <tr>
+                <td>Толщины:</td>
+                <td>30 / 50 / 80 / 100 мм</td>
+              </tr>
+              <tr>
+                <td>В упаковке:</td>
+                <td>20 / 12 / 7 / 6 шт</td>
+              </tr>
+              <tr>
+                <td>Плотность:</td>
+                <td>13 кг/м<sup>3</sup></td>
+              </tr>
+            </table>
+            <span class="catalog-item__price">1999 руб. м<sup>3</sup></span>
+            <a class="btn-flat orange btn-responsive-center" href="#psb25tu" title="ПСБ-25 ТУ">Подробнее</a>
+          </div>
+          <div class="mix catalog-item psb25 all">
+            <figure class="catalog-item__figure">
+              <img class="img-responsive img-rounded" src="../img/eps-item.png" alt="ПСБ-25 ГОСТ">
+              <figcaption class="catalog-item__caption">ПСБ-25 ГОСТ</figcaption>
+            </figure>
+            <table class="catalog-item__table">
+              <tr>
+                <td>Толщины:</td>
+                <td>30 / 50 / 80 / 100 мм</td>
+              </tr>
+              <tr>
+                <td>В упаковке:</td>
+                <td>20 / 12 / 7 / 6 шт</td>
+              </tr>
+              <tr>
+                <td>Плотность:</td>
+                <td>15 кг/м<sup>3</sup></td>
+              </tr>
+            </table>
+            <span class="catalog-item__price">2199 руб. м<sup>3</sup></span>
+            <a class="btn-flat orange btn-responsive-center" href="#psb25gost" title="ПСБ-25 ГОСТ">Подробнее</a>
+          </div>
+          <div class="mix catalog-item psb35 all">
+            <figure class="catalog-item__figure">
+              <img class="img-responsive img-rounded" src="../img/eps-item.png" alt="ПСБ-35 ТУ">
+              <figcaption class="catalog-item__caption">ПСБ-35 ТУ</figcaption>
+            </figure>
+            <table class="catalog-item__table">
+              <tr>
+                <td>Толщины:</td>
+                <td>30 / 50 / 80 / 100 мм</td>
+              </tr>
+              <tr>
+                <td>В упаковке:</td>
+                <td>20 / 12 / 7 / 6 шт</td>
+              </tr>
+              <tr>
+                <td>Плотность:</td>
+                <td>17 кг/м<sup>3</sup></td>
+              </tr>
+            </table>
+            <span class="catalog-item__price">2799 руб. м<sup>3</sup></span>
+            <a class="btn-flat orange btn-responsive-center" href="#psb35tu" title="ПСБ-35 ТУ">Подробнее</a>
+          </div>
+          <div class="mix catalog-item psb35 all">
+            <figure class="catalog-item__figure">
+              <img class="img-responsive img-rounded" src="../img/eps-item.png" alt="ПСБ-35 ТУ Супер">
+              <figcaption class="catalog-item__caption">ПСБ-35 ТУ Супер</figcaption>
+            </figure>
+            <table class="catalog-item__table">
+              <tr>
+                <td>Толщины:</td>
+                <td>30 / 50 / 80 / 100 мм</td>
+              </tr>
+              <tr>
+                <td>В упаковке:</td>
+                <td>20 / 12 / 7 / 6 шт</td>
+              </tr>
+              <tr>
+                <td>Плотность:</td>
+                <td>19 кг/м<sup>3</sup></td>
+              </tr>
+            </table>
+            <span class="catalog-item__price">2999 руб. м<sup>3</sup></span>
+            <a class="btn-flat orange btn-responsive-center" href="#psb35super" title="ПСБ-35 ТУ Супер">Подробнее</a>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid footer" id="by-now">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <nav>
+              <ul class="bottom-nav">
+                <li class="bottom-nav__item"><a class="bottom-nav__link" href="../../catalog/">Каталог продукции</a></li>
+                <li class="bottom-nav__item"><a class="bottom-nav__link" href="#">О компании</a></li>
+                <li class="bottom-nav__item"><a class="bottom-nav__link" href="#">Технология утепления</a></li>
+                <li class="bottom-nav__item"><a class="bottom-nav__link" href="#">Где купить?</a></li>
+                <li class="bottom-nav__item"><a class="bottom-nav__link" href="#top">В начало страницы</a></li>
+              </ul>
+            </nav>
+            <span class="copyright">
+              © KLESTER System, 2016—2017
+            </span>
+          </div>
+          <div class="col-sm-4">
+            <address class="address-footer pull-right text-right">
+              <p class="phone">8 800 350 35 60</p>
+              <p class="street">ул. Большая Окружная д.16</p>
+              <p>Окрыты ежедневно: с 8:00 до 19:00</p>
+            </address>
+            <button class="btn-flat orange pull-right donthyphenate">Связаться с нами</button>
+          </div>
+          <div class="col-sm-4">
+            <img class="img-responsive map" src="../../img/map.png" alt="Где купить пенополистирол">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ☢ Подключаем скрипты ☢ -->
     <!-- Скрипты для корректной обработки тегов IE -->
     <!-- Обеспечиваем базовые стили HTML5 для браузеров IE ниже 10 версии с помощью html5 shiv -->
     <!--[if lte IE 9]>
@@ -69,27 +252,35 @@
     <!--[if lte IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script> 
     <![endif]-->
-    <script src="../../js/jquery-3.2.1.slim.min.js"></script>
-    <script src="../../js/Hyphenator.js"></script>
-    <!-- <script async src="../../js/slick.min.js"></script> -->
-    <script async src="../../js/custom.js"></script>
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../js/Hyphenator.js"></script>
+    <script src="../js/mixitup.min.js"></script>
+    <!-- <script src="js/slick.min.js"></script> -->
+    <script src="../js/outdatedbrowser.min.js"></script>
+    <script src="../js/custom.js"></script>
     <script>
       Hyphenator.run();
-      $(document).ready(function() {
-        $(".single").slick({
-          infinite: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-          arrows: false
-        });
-        $(".vertical").slick({
-          infinite: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-          arrows: false,
-        });
+      function addLoadEvent(func) {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+          window.onload = func;
+        } else {
+          window.onload = function() {
+            if (oldonload) {
+              oldonload();
+            }
+          func();
+          }
+        }
+      }
+      //call plugin function after DOM ready
+      addLoadEvent(function(){
+        outdatedBrowser({
+          bgColor: '#f25648',
+          color: '#ffffff',
+          lowerThan: 'transform',
+          languagePath: 'js/lang/ru.html'
+        })
       });
     </script>
     <!-- ☢ Подключаем счётчики ☢ -->

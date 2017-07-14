@@ -1,12 +1,23 @@
 // Variables
 $text-default: #424242
 $bg-color: #f9f9f9
+$orange: #eb6e47
+
+::selection
+  background-color: $orange
+  color: $bg-color
 
 body
   background-color: $bg-color
+  -webkit-text-size-adjust: none
+
+a, label
+  -webkit-tap-highlight-color: $orange
+
 // Утилиты и нормализация
 @import "utility/_normalize.sass"
 @import "utility/_utility.sass"
+@import "utility/_custom.sass"
 
 // Сетка
 // @import "grid/_grid.sass"
@@ -24,3 +35,5 @@ body
 @import "components/_footer.sass"
 @import "components/_bottom-nav.sass"
 @import "components/_button.sass"
+@import "components/_outdatedbrowser.scss"
+@import "components/_catalog.sass"

@@ -35,6 +35,7 @@
     <link type="text/plain" rel="author" href="http://romanvolgasov.ru/humans.txt">
   </head>
   <body class="hyphenate">
+    <div id="outdated"></div>
     <header class="container" id="top">
       <div class="row">
         <div class="col-xs-12 header">
@@ -328,7 +329,7 @@
         <div class="col-xs-12">
           <h2 class="donthyphenate">Производство пенополистирола</h2>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 production">
           <p>
             «KLESTER System» — это торговая марка, основанная на лучших традициях европейского качества.
           </p>
@@ -392,14 +393,14 @@
               <p class="street">ул. Большая Окружная д.16</p>
               <p>Окрыты ежедневно: с 8:00 до 19:00</p>
             </address>
-            <button class="btn-flat donthyphenate">Связаться с нами</button>
+            <button class="btn-flat orange pull-right donthyphenate">Связаться с нами</button>
           </div>
           <div class="col-sm-4">
             <img class="img-responsive map" src="img/map.png" alt="Где купить пенополистирол">
           </div>
         </div>
       </div>
-    </footer>    
+    </footer>
   
     <!-- ☢ Подключаем скрипты ☢ -->
     <!-- Скрипты для корректной обработки тегов IE -->
@@ -413,10 +414,34 @@
     <![endif]-->
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/Hyphenator.js"></script>
-    <script async src="js/slick.min.js"></script>
-    <script async src="js/custom.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/outdatedbrowser.min.js"></script>
+    <script src="js/custom.js"></script>
     <script>
       Hyphenator.run();
+      function addLoadEvent(func) {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+          window.onload = func;
+        } else {
+          window.onload = function() {
+            if (oldonload) {
+              oldonload();
+            }
+          func();
+          }
+        }
+      }
+      //call plugin function after DOM ready
+      addLoadEvent(function(){
+        outdatedBrowser({
+          bgColor: '#f25648',
+          color: '#ffffff',
+          lowerThan: 'transform',
+          languagePath: 'js/lang/ru.html'
+        })
+      });
+      // Slik
       $(document).ready(function() {
         $(".single").slick({
           infinite: true,

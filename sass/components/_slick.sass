@@ -20,6 +20,8 @@ $slider__orange: #E64A19
   display: block
   position: relative
   -ms-touch-action: pan-y
+  overflow-x: auto
+  -webkit-overflow-scrolling:touch
   touch-action: pan-y
   -webkit-touch-callout: none
   -webkit-user-select: none
@@ -63,6 +65,11 @@ $slider__orange: #E64A19
     clear: both
   .slick-loading &
     visibility: hidden
+
+// Фикс для IE 11, когда предыдущий слайд накладывался на контент
+_:-ms-lang(x),
+.slick-track
+  opacity: 0.99 !important
 
 .slick-slide
   height: 100%
@@ -228,9 +235,9 @@ $slider__orange: #E64A19
   position: relative
   min-height: 600px
   @media (max-width: 767px)
-    min-height: none
+    min-height: 1px
 .slider__item-adaptive-height
-    min-height: none
+    min-height: 1px
 
 .slider__title
   font-family: "Anglecia Pro Dsp", serif

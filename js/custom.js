@@ -32,3 +32,7 @@
   document.addEventListener('click', collapseClickHandler, false);
 
 })(document, window);
+
+// Каталог реализация плиток
+$(".catalog-grid").mixItUp({
+});

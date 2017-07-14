@@ -97,6 +97,7 @@ $top-menu__dark: #424242
 
 .top-nav__item
   color: $top-menu__dark
+  cursor: pointer
   border: 0.0625rem solid transparent
   margin-right: 1rem
   outline-color: $top-menu__orange
@@ -104,7 +105,7 @@ $top-menu__dark: #424242
   transition: all .5s ease
   text-decoration: none
   &:hover
-    border: 0.0625rem solid $top-menu__orange
+    border: 0.0625rem solid $top-menu__dark-gray
     border-radius: 0.3125rem
     transition: all .5s ease
   &:last-of-type
@@ -120,6 +121,7 @@ $top-menu__dark: #424242
   background-color: $top-menu__gray
   border-radius: 0.3125rem
   &:hover
+    // cursor: not-allowed
     border: 0.0625rem solid $top-menu__dark-gray
 
 .top-nav__item_btn

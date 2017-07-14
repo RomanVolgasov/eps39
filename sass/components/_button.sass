@@ -3,16 +3,19 @@ $top-menu__white: #F9F9F9
 $top-menu__dark: #424242
 
 .btn-flat
-  background-color: $top-menu__orange
   border-radius: 0.3125rem
-  border: 0.0625rem solid transparent
-  color: $top-menu__white
+  // border: 0.0625rem solid transparent
   cursor: pointer
-  outline-color: $top-menu__orange
-  padding: 0.58rem 1rem 0.6rem
+  padding: 0.58rem 2rem 0.6rem
   transition: all .5s ease
-  text-decoration: none
-  float: right
+  text-decoration: none 
+
+.orange
+  background-color: transparent
+  border: 0.0625rem solid $top-menu__orange
+  color: $top-menu__dark
+  outline-color: $top-menu__orange
   &:hover
-    background-color: transparent
-    color: $top-menu__dark
+    background-color: $top-menu__orange
+    border: 0.0625rem solid transparent
+    color: $top-menu__white

@@ -1,0 +1,86 @@
+$catalog__dark-gray: #c6c6c6
+$catalog__gray: #E0E0E0
+$catalog__white: rgba(249, 249, 249, 0.5)
+
+figure
+  margin: 1rem 2rem 0
+  @media (max-width: 767px)
+    margin: 0
+
+.catalog-list
+  align-items: center
+  background-color: $top-menu__white
+  border-top: 0.0625rem solid $catalog__gray
+  display: flex
+  flex-flow: row nowrap
+  justify-content: center
+  height: 5rem
+  list-style: none
+  overflow-y: hidden
+  overflow-x: auto
+  padding-left: 0
+  position: relative
+  white-space: nowrap
+  &::-webkit-scrollbar
+    width: 0
+  @media (min-width: 1px) and (max-width: 1199px)
+    justify-content: space-between
+
+.catalog-grid
+  align-items: flex-start
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  .mix
+    display: none
+
+.catalog-item
+  padding: 0.625rem
+  max-width: 21.875rem
+  text-align: center
+  figcaption
+    padding: 10px 5px
+    text-align: center
+
+.catalog-item__figure
+  border-radius: 5px
+  position: relative
+
+.catalog-item__caption
+  font-size: 1.8rem
+  font-weight: 500
+  top: 0
+  width: 100%
+
+.catalog-item__price
+  bottom: 1rem
+  color: #5b5b5b
+  display: block
+  font-family: "Anglecia Pro Dsp", serif
+  font-size: 2.6rem
+  position: relative
+  padding: 1rem 0 0
+  @media (max-width: 767px)
+    font-size: 2.4rem
+  @media (min-width: 768px) and (max-width: 991px)
+    font-size: 2.4rem
+
+.catalog-item__list
+  list-style: none
+  text-align: left
+  margin: 0
+  padding: 0
+
+.catalog-item__table
+  width: 100%
+  padding: 1rem 2rem
+  @media (max-width: 767px)
+    padding: 1rem 0.5rem
+  tr
+    vertical-align: middle
+  td
+    padding: 5px 0
+  td:nth-child(2n)
+    text-align: right
+  td:nth-child(2n-1)
+    text-align: left

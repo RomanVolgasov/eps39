@@ -1,0 +1,22 @@
+$material__gray: #E0E0E0
+$material__light-gray: #F5F5F5
+
+.material-table
+  border-collapse: collapse
+  width: 100%
+
+.material-table__cell
+  padding: 0.3125rem 0.4375rem
+
+.material-table__caption
+  font-weight: bold
+  padding: 1rem 0.4375rem
+  text-align: left
+
+.material-table__row
+  border-bottom: 1px solid $material__gray
+  &:hover
+    background-color: $material__light-gray
+
+.material-table__cell:nth-child(2n)
+  text-align: right

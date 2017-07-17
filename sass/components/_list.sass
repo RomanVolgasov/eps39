@@ -1,0 +1,39 @@
+$list__gray: #c6c6c6
+
+
+.list-inline
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  list-style: none
+  margin: 0
+  padding: 0
+  @media (max-width: 767px)
+    display: block
+  @media (min-width: 768px) and (max-width: 991px)
+    justify-content: space-around
+
+.list-inline__item
+  padding: 0.5rem 1rem
+  @media (max-width: 767px)
+    padding-left: 0.2rem
+  &::after
+    content: ""
+    border-right: 0.0625rem solid $list__gray
+    padding-left: 2rem
+    @media (min-width: 1px) and (max-width: 991px)
+      border-right: none
+    @media (min-width: 768px) and (max-width: 991px)
+      padding-left: 0
+  &::before
+    @media (max-width: 767px)
+      content: ""
+      background: url('../../img/checked.png') no-repeat
+      height: 1rem
+      padding-right: 1.8rem
+      vertical-align: middle
+      width: 1rem
+
+.list-inline__item:last-of-type::after
+  border-right: none
+  padding-left: 0

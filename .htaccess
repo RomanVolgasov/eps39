@@ -1,0 +1,31 @@
+Options -Indexes
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  # Редирект
+  Options +FollowSymLinks
+  RewriteEngine On
+  # non www to www
+  # RewriteCond %{HTTP_HOST} !^www\. [NC]
+  # RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+  # www to non www
+  RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+  RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+</IfModule>
+
+# Включаем кэш в браузерах посетителей
+<ifModule mod_headers.c>
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "max-age=86400"
+  </FilesMatch>
+  <FilesMatch "\.(js|css|txt)$">
+    Header set Cache-Control "max-age=604800"
+  </FilesMatch>
+  <FilesMatch "\.(flv|swf|ico|gif|jpg|jpeg|png|svg|woff)$">
+    Header set Cache-Control "max-age=2592000"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.html
+</IfModule>

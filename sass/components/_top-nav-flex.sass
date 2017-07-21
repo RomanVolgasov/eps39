@@ -92,7 +92,6 @@ $top-menu__dark: #424242
   border-radius: 0.3125rem
   display: inline-block
   height: 5rem
-  margin-left: 0.3rem
   width: 5rem
 
 .top-nav__item
@@ -104,15 +103,13 @@ $top-menu__dark: #424242
   padding: 0.58rem 1rem 0.6rem
   transition: all .5s ease
   text-decoration: none
-  &:hover,
-  &:focus,
-  &:active
+  &:hover
     border: 0.0625rem solid $top-menu__dark-gray
     border-radius: 0.3125rem
     transition: all .5s ease
   @media (max-width: 767px)
     &:first-of-type
-      margin-left: 0.3rem
+      margin-left: 0
   @media (min-width: 768px) and (max-width: 991px)
     &:last-of-type
       margin-right: 0.3rem
@@ -120,10 +117,7 @@ $top-menu__dark: #424242
 .active
   background-color: $top-menu__gray
   border-radius: 0.3125rem
-  &:hover,
-  &:focus,
-  &:active
-    // cursor: not-allowed
+  &:hover
     border: 0.0625rem solid $top-menu__dark-gray
 
 .top-nav__item_btn
@@ -131,8 +125,6 @@ $top-menu__dark: #424242
   border-radius: 0.3125rem
   color: $top-menu__white
   margin-right: 0
-  &:hover,
-  &:focus,
-  &:active
+  &:hover
     background-color: transparent
     color: $top-menu__dark

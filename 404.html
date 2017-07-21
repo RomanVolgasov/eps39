@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- ☢ Служебные ☢ -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- ☢ DNS-Предзагрузка ☢ -->
+    <!-- <link rel="dns-prefetch" href="//cdnjs.cloudflare.com/"> -->
+
+    <!-- ⚠️ SEO ⚠️ -->
+    <title>404</title>
+    <meta name="description" content="Страница 404. Пенополистирол можно купить по ссылке http://penoplast-klester.ru">
+    <meta name="keywords" content="404">
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="#">
+
+    <!-- ☢ Подключение CSS ☢ -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- ⚠️ Подключение в web-master ⚠️ -->
+    
+    <!-- ⚠️ Favicon для всех случаев генерируется тут: http://realfavicongenerator.net/ ⚠️ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <!-- © Copyright © -->
+    <meta name="author" content="Роман Волгасов">
+    <link type="text/plain" rel="author" href="http://romanvolgasov.ru/humans.txt">
+  </head>
+  <body>
+    <div class="page404">
+      <div id="outdated"></div>
+      <a class="page404__link-img" href="/" title="На главную"></a>
+      <h1 class="sr-only">404</h1>
+      <p class="page404__description">Здесь ничего нет. Вернитесь на <a href="/" title="Главная страница сайта">главную страницу</a> сайта.</p>
+      <span class="page404__title">40<span class="transform">4</span></span>
+    </div>
+  
+    <!-- ☢ Подключаем скрипты ☢ -->
+    <!-- Скрипты для корректной обработки тегов IE -->
+    <!-- Обеспечиваем базовые стили HTML5 для браузеров IE ниже 10 версии с помощью html5 shiv -->
+    <!--[if lte IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script> 
+    <![endif]-->
+    <!-- Обеспечиваем поддержку медиазапросов min-width и max-width в Internet Explorer ниже 10 версии -->
+    <!--[if lte IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script> 
+    <![endif]-->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/outdatedbrowser.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+      Hyphenator.run();
+      function addLoadEvent(func) {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+          window.onload = func;
+        } else {
+          window.onload = function() {
+            if (oldonload) {
+              oldonload();
+            }
+          func();
+          }
+        }
+      }
+      //call plugin function after DOM ready
+      addLoadEvent(function(){
+        outdatedBrowser({
+          bgColor: '#f25648',
+          color: '#ffffff',
+          lowerThan: 'transform',
+          languagePath: 'js/lang/ru.html'
+        })
+      });
+      (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42555554 = new Ya.Metrika({ id:42555554, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+    </script>
+  </body>
+  
+</html>

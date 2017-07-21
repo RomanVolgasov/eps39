@@ -1,0 +1,82 @@
+$orange__tab: #E64A19
+$gray__tab: #E0E0E0
+$dark__tab: #424242
+$light__tab: #F5F5F5
+
+.tab
+  overflow: hidden
+  position: relative
+
+.tab__list
+  display: flex
+  flex-flow: row nowrap
+  justify-content: flex-start
+  list-style: none
+  overflow-y: hidden
+  overflow-x: auto
+  padding: 0 0.6rem 0
+  touch-action: auto
+  user-select: none
+  vertical-align: middle
+  white-space: nowrap
+  &::-webkit-scrollbar
+    width: 0
+  @media (max-width: 767px)
+    padding: 0
+
+.tab__list-item
+  border-bottom: 2px solid $dark__tab
+  cursor: pointer
+  padding: 1rem 2rem
+  -webkit-transition: all 0.4s ease-in-out
+  -moz-transition: all 0.4s ease-in-out
+  transition: all 0.4s ease-in-out
+  
+.current-tab
+  background: $dark__tab
+  color: $light__tab
+
+.tab__container
+  padding-left: 0.6rem
+  @media (max-width: 767px)
+    padding-left: 0rem
+
+.tab__item-block
+  display: none
+  &:first-child
+    display: block
+
+.tab__item-img
+  @media (min-width: 992px)
+    float: right
+    margin: 0 0 1rem 2rem
+    max-width: 500px
+  @media (min-width: 1px) and (max-width: 991px)
+    display: block
+    padding: 0 0 1rem
+    width: 100%
+
+.sm-img
+  display: inline-block
+  max-width: 133px  
+  @media (max-width: 767px)
+    max-width: 90px
+    padding-right: 10px
+  @media (min-width: 768px) and (max-width: 991px)
+    margin-right: 3rem
+
+.tab__item-gallery-block
+  display: flex
+  flex-wrap: wrap
+  float: right
+  justify-content: space-between
+  width: 500px
+  @media (min-width: 1px) and (max-width: 991px)
+    display: block
+    margin: 0
+    width: 100%
+
+.tab__item-description
+  padding-left: 0.6rem
+  @media (max-width: 767px)
+    padding-left: 0

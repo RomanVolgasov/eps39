@@ -1,0 +1,43 @@
+$page404__white: #F5F5F5
+$page404__orange: #E64A19
+
+.page404
+  align-items: center
+  background: url('../img/bg-404.jpeg') 50% 50% repeat
+  background-size: cover
+  display: flex
+  flex-direction: column
+  height: 100vh
+  justify-content: center
+  width: 100%
+  @media (max-width: 767px)
+    background: url('../img/bg-404.jpeg') 12% 30% repeat
+
+.page404__link-img
+  background: url("../img/logo.svg") no-repeat
+  background-size: cover
+  border-radius: 0.3125rem
+  height: 10rem
+  width: 10rem
+
+.page404__title
+  color: $page404__white
+  font-size: 25rem
+  @media (max-width: 767px)
+    font-size: 7rem
+
+.transform
+  display: inline-block
+  transform: rotateY(-180deg)
+
+.page404__description
+  color: $page404__white
+  font-size: 2rem
+  line-height: 2rem
+  padding: 0 2rem
+  text-align: center
+  @media (max-width: 767px)
+    font-size: 1.3rem
+  a
+    color: $page404__orange
+    text-decoration: none

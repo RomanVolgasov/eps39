@@ -1,4 +1,5 @@
 [cover]: https://github.com/RomanVolgasov/eps39/blob/master/img/cover.png
+[w3c-achievement]: https://github.com/RomanVolgasov/eps39/blob/master/img/achievement/w3c-achievement.png
 
 # penoplast-klester.ru
 
@@ -12,4 +13,6 @@ __Домен__: penoplast-klester.ru
 
 ## Валидация по W3C
 
-Полностью валидный код на всех страницах сайта
+![w3c-achievement]
+
+Полностью валидный код на всех страницах сайта. 

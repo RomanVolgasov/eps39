@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2017-07-25 10:57">
+  <shop>
+    <name>Деловая Русь</name>
+    <company>Пенополистирол — собственное производство</company>
+    <url>http://penoplast-klester.ru/</url>
+    <currencies>
+      <currency id="RUR" rate="1"/>
+      <currency id="USD" rate="CBRF"/>
+      <currency id="EUR" rate="CBRF"/>
+    </currencies>
+    <categories>
+      <category id="1">Пенополистирол (пенопласт)</category>
+    </categories>
+    <offers>
+
+      <offer id="1" type="vendor.model" available="true">
+        <url>http://penoplast-klester.ru/catalog/penopolistirol-15-tu/</url>
+        <price>1299</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <delivery>true</delivery>
+        <typePrefix>Пенополистирол (пенопласт)</typePrefix>
+        <vendor>KLESTER System</vendor>
+        <vendorCode>EPS-15TU</vendorCode>
+        <model>ПСБ-С-15 ТУ</model>
+        <description>
+          Лёгкие плиты не утяжеляют конструктивные элементы зданий: они оптимальны для внутренних перегородок и заполнения стен в каркасной строительной технологии. Даже при плотности в 9,0 кг/м3, панели обладают хорошими показателями теплосбережения и устойчивостью к влаге, достаточными для конструкций, эксплуатируемых с минимальными силовыми нагрузками.
+        </description>
+        <country_of_origin>Россия</country_of_origin>
+        <param name="Длина" unit="мм">1000</param>
+        <param name="Высота" unit="мм">500</param>
+        <param name="Толщина" unit="мм">50 / 80 / 100</param>
+        <param name="Количество плит в упаковке" unit="шт">12 / 7 / 6</param>
+        <param name="Плотность" unit="кг/м³">9</param>
+        <param name="Группа горючести">Г3</param>
+      </offer>
+
+      <offer id="4" type="vendor.model" available="true">
+        <url>http://penoplast-klester.ru/catalog/penopolistirol-15-gost/</url>
+        <price>1699</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <delivery>true</delivery>
+        <typePrefix>Пенополистирол (пенопласт)</typePrefix>
+        <vendor>KLESTER System</vendor>
+        <vendorCode>EPS-15GOST</vendorCode>
+        <model>ПСБ-С-15 ГОСТ</model>
+        <description>
+          Представленный материал произведён и маркирован в соответствии с ГОСТ 15588, что полностью гарантирует его качество. Однородный белый цвет пенопласта, отсутствие сколов и расслоений являются подтверждением его добротности. Утеплитель имеет необходимую прочность и плотность для обеспечения требуемой теплоизоляции внутренних перегородок, междуэтажных перекрытий, балконов, небольших модульных построек.
+        </description>
+        <country_of_origin>Россия</country_of_origin>
+        <param name="Длина" unit="мм">1000</param>
+        <param name="Высота" unit="мм">500</param>
+        <param name="Толщина" unit="мм">30 / 50 / 80 / 100</param>
+        <param name="Количество плит в упаковке" unit="шт">20 / 12 / 7 / 6</param>
+        <param name="Плотность" unit="кг/м³">11</param>
+        <param name="Группа горючести">Г3</param>
+      </offer>
+
+      <offer id="8" type="vendor.model" available="true">
+        <url>http://penoplast-klester.ru/catalog/penopolistirol-25-tu/</url>
+        <price>1999</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <delivery>true</delivery>
+        <typePrefix>Пенополистирол (пенопласт)</typePrefix>
+        <vendor>KLESTER System</vendor>
+        <vendorCode>EPS-25TU</vendorCode>
+        <model>ПСБ-С-25 ТУ</model>
+        <description>
+          Теплоизолирующие плиты торговой марки «KLESTER System» — это продукция с безупречной репутацией на рынке стройматериалов. Если требуется купить пенополистирол для наружных конструкций, то изделия ПСБ–С 25 ТУ считаются наиболее подходящим для этого материалом. Кондиционный пенопласт имеет ровный белый цвет и равномерно замкнутую пористую структуру с плотно склеенными полимерными гранулами круглой или овальной формы. Любой посторонний или химический запах отсутствует.
+        </description>
+        <country_of_origin>Россия</country_of_origin>
+        <param name="Длина" unit="мм">1000</param>
+        <param name="Высота" unit="мм">500</param>
+        <param name="Толщина" unit="мм">30 / 50 / 80 / 100</param>
+        <param name="Количество плит в упаковке" unit="шт">20 / 12 / 7 / 6</param>
+        <param name="Плотность" unit="кг/м³">13</param>
+        <param name="Группа горючести">Г3</param>
+      </offer>
+
+      <offer id="12" type="vendor.model" available="true">
+        <url>http://penoplast-klester.ru/catalog/penopolistirol-25-gost/</url>
+        <price>2199</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <delivery>true</delivery>
+        <typePrefix>Пенополистирол (пенопласт)</typePrefix>
+        <vendor>KLESTER System</vendor>
+        <vendorCode>EPS-25GOST</vendorCode>
+        <model>ПСБ-С-25 ГОСТ</model>
+        <description>
+          Предлагаемая марка утеплителя производится методом вспенивания полистирола с последующим спеканием гранул, в результате чего образуется пористый, но достаточно прочный изолятор. Изготавливается пенополистирол в Калининграде на собственном предприятии Компании по технологии, предусматривающей ввод важного вещества — антипирена. Этот компонент обеспечивает пожаробезопасность изолятора по классу нормально горючих материалов.
+        </description>
+        <country_of_origin>Россия</country_of_origin>
+        <param name="Длина" unit="мм">1000</param>
+        <param name="Высота" unit="мм">500</param>
+        <param name="Толщина" unit="мм">30 / 50 / 80 / 100</param>
+        <param name="Количество плит в упаковке" unit="шт">20 / 12 / 7 / 6</param>
+        <param name="Плотность" unit="кг/м³">15</param>
+        <param name="Группа горючести">Г3</param>
+      </offer>
+
+      <offer id="16" type="vendor.model" available="true">
+        <url>http://penoplast-klester.ru/catalog/penopolistirol-35-tu/</url>
+        <price>2799</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <delivery>true</delivery>
+        <typePrefix>Пенополистирол (пенопласт)</typePrefix>
+        <vendor>KLESTER System</vendor>
+        <vendorCode>EPS-35TU</vendorCode>
+        <model>ПСБ-С-35 ТУ</model>
+        <description>
+          Плиты этой марки стоят дороже популярных изделий ПСБ–С 25, но если купить пенополистирол именно с показателем максимальной плотности до 35 кг/м3, то вложенные средства не станут пустой тратой денег. Теплосберегающие характеристики материала находятся на таком уровне, что позволяют использовать его в строительстве там, где предъявляются повышенные требования.
+        </description>
+        <country_of_origin>Россия</country_of_origin>
+        <param name="Длина" unit="мм">1000</param>
+        <param name="Высота" unit="мм">500</param>
+        <param name="Толщина" unit="мм">30 / 50 / 80 / 100</param>
+        <param name="Количество плит в упаковке" unit="шт">20 / 12 / 7 / 6</param>
+        <param name="Плотность" unit="кг/м³">17</param>
+        <param name="Группа горючести">Г3</param>
+      </offer>
+
+      <offer id="20" type="vendor.model" available="true">
+        <url>http://penoplast-klester.ru/catalog/penopolistirol-35-super/</url>
+        <price>2999</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <delivery>true</delivery>
+        <typePrefix>Пенополистирол (пенопласт)</typePrefix>
+        <vendor>KLESTER System</vendor>
+        <vendorCode>EPS-35TU-SUPER</vendorCode>
+        <model>ПСБ-С-35 ТУ СУПЕР</model>
+        <description>
+          Теплоизолятор со значительной плотностью от компании «Деловая Русь», изготавливаемый только под заказ. Название «Супер» в аббревиатуре говорит само за себя: качественные характеристики и цена на полистирол этой марки выше других аналогов. Пенопласт этой марки обладает самой низкой теплопроводностью, наивысшей плотностью и прочностью среди представленных в каталоге изделий.
+        </description>
+        <country_of_origin>Россия</country_of_origin>
+        <param name="Длина" unit="мм">1000</param>
+        <param name="Высота" unit="мм">500</param>
+        <param name="Толщина" unit="мм">30 / 50 / 80 / 100</param>
+        <param name="Количество плит в упаковке" unit="шт">20 / 12 / 7 / 6</param>
+        <param name="Плотность" unit="кг/м³">19</param>
+        <param name="Группа горючести">Г3</param>
+      </offer>
+
+    </offers>
+  </shop>
+</yml_catalog>

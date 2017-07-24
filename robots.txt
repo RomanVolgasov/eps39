@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /css/components/*
+Disallow: /css/fonts/*
+Disallow: /fonts/*
+Disallow: /js/lang/*
+Disallow: /js/patterns/*
+Disallow: /sass/*
+Disallow: *404.html*
+Sitemap: http://penoplast-klester.ru/sitemap.xml
+Host: http://penoplast-klester.ru

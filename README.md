@@ -2,6 +2,7 @@
 [w3c-achievement]: https://github.com/RomanVolgasov/eps39/blob/master/img/achievement/w3c-achievement.png
 [page-speed-mobile]: https://github.com/RomanVolgasov/eps39/blob/master/img/achievement/PageSpeed-mobile.jpg
 [page-speed-desktop]: https://github.com/RomanVolgasov/eps39/blob/master/img/achievement/PageSpeed-desktop.jpg
+[gt-metrix]: https://github.com/RomanVolgasov/eps39/blob/master/img/achievement/gt-metrix.jpg
 
 # penoplast-klester.ru
 
@@ -30,3 +31,21 @@ __Технологии__: HTML5, CSS3, Bootstrap 3 (сетка), SASS.
 ![page-speed-mobile]
 
 ![page-speed-desktop]
+
+### GTMetrix
+
+Test Server Region: Vancouver, Canada
+
+Firefox (Desktop) 53.0
+
+PageSpeed Score: A(92%)
+
+YSlow Score: B(82%)
+
+Fully Loaded Time — 17.8s
+
+Total Page Size — 1.16MB
+
+Requests — 63
+
+![gt-metrix]

@@ -54,6 +54,3 @@ $(document).ready(function() {
   })(jQuery);
 
 });
-
-
-

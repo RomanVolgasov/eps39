@@ -13,7 +13,9 @@ address
 
 .phone
   color: $address__orange
-  font-size: 1.7rem
+  +rfs(35)
+  @media (min-width: 768px) and (max-width: 991px)
+    +rfs(28)
   font-style: normal
   font-weight: 500
   line-height: 0

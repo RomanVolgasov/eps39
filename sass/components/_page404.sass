@@ -22,9 +22,7 @@ $page404__orange: #E64A19
 
 .page404__title
   color: $page404__white
-  font-size: 25rem
-  @media (max-width: 767px)
-    font-size: 7rem
+  +rfs(260)
 
 .transform
   display: inline-block
@@ -32,12 +30,10 @@ $page404__orange: #E64A19
 
 .page404__description
   color: $page404__white
-  font-size: 2rem
+  +rfs(30)
   line-height: 2rem
   padding: 0 2rem
   text-align: center
-  @media (max-width: 767px)
-    font-size: 1.3rem
   a
     color: $page404__orange
     text-decoration: none

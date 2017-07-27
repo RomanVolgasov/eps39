@@ -1,8 +1,8 @@
-[cover]: https://github.com/RomanVolgasov/eps39/blob/master/img/cover.png
-[w3c-achievement]: https://github.com/RomanVolgasov/eps39/blob/master/img/achievement/w3c-achievement.png
-[page-speed-mobile]: https://github.com/RomanVolgasov/eps39/blob/master/img/achievement/PageSpeed-mobile.jpg
-[page-speed-desktop]: https://github.com/RomanVolgasov/eps39/blob/master/img/achievement/PageSpeed-desktop.jpg
-[gt-metrix]: https://github.com/RomanVolgasov/eps39/blob/master/img/achievement/gt-metrix.jpg
+[cover]: https://github.com/RomanVolgasov/eps39/blob/master/html/img/cover.png
+[w3c-achievement]: https://github.com/RomanVolgasov/eps39/blob/master/html/img/achievement/w3c-achievement.png
+[page-speed-mobile]: https://github.com/RomanVolgasov/eps39/blob/master/html/img/achievement/PageSpeed-mobile.jpg
+[page-speed-desktop]: https://github.com/RomanVolgasov/eps39/blob/master/html/img/achievement/PageSpeed-desktop.jpg
+[gt-metrix]: https://github.com/RomanVolgasov/eps39/blob/master/html/img/achievement/gt-metrix.jpg
 
 # penoplast-klester.ru
 

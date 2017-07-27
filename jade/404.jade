@@ -47,31 +47,4 @@ html(lang="ru")
         span.transform 4
 
     // ☢ Подключаем скрипты ☢
-    include _section/_script/_script-ie.jade
-    include _section/_script/_script-main-level-1.jade
-    script(src="js/custom.js")
-    script.
-      Hyphenator.run();
-      function addLoadEvent(func) {
-        var oldonload = window.onload;
-        if (typeof window.onload != 'function') {
-          window.onload = func;
-        } else {
-          window.onload = function() {
-            if (oldonload) {
-              oldonload();
-            }
-          func();
-          }
-        }
-      }
-      //call plugin function after DOM ready
-      addLoadEvent(function(){
-        outdatedBrowser({
-          bgColor: '#f25648',
-          color: '#ffffff',
-          lowerThan: 'transform',
-          languagePath: 'js/lang/ru.html'
-        })
-      });
     include _section/_script/_metrika.jade

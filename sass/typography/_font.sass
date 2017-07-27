@@ -1,3 +1,5 @@
+@import "../typography/_rfs.scss"
+
 html
   color: $text-default
   font-size: 100%
@@ -15,19 +17,19 @@ html
 
 @font-face
   font-family: 'Roboto'
-  src: url('../../fonts/roboto-400-normal.woff') format('woff')
+  src: url('../../../html/fonts/roboto-400-normal.woff') format('woff')
   font-weight: 400
   font-style: normal
 
 @font-face
   font-family: 'Roboto'
-  src: url('../../fonts/roboto-500-normal.woff') format('woff')
+  src: url('../../../html/fonts/roboto-500-normal.woff') format('woff')
   font-weight: 500
   font-style: bold
 
 @font-face
   font-family: 'Anglecia Pro Dsp';
-  src: url('../../fonts/angleciadisplay-400-normal.woff') format('woff')
+  src: url('../../../html/fonts/angleciadisplay-400-normal.woff') format('woff')
   font-weight: 400
   font-style: normal
 
@@ -35,9 +37,8 @@ body
   font-family: 'Roboto', sans-serif
   text-align: justify
 
-p,
-ul,
-ol
+p, ul, ol
+  +rfs(16)
   line-height: 1.4715rem
   @media (min-width: 1px) and (max-width: 991px)
     line-height: 1.35
@@ -49,53 +50,43 @@ h4
   font-family: "Anglecia Pro Dsp", serif
 
 h2
-  font-size: 3rem
+  +rfs(60)
   font-weight: 100
   letter-spacing: 0.1rem
   line-height: 1.05
   margin: 1.5rem 0
   @media (min-width: 992px) and (max-width: 1199px)
-    font-size: 2.5rem
     line-height: 1.125
     margin: 1.25rem 0
   @media (min-width: 768px) and (max-width: 991px)
-    font-size: 2rem
     line-height: 1.25
     margin: 1.25rem 0
   @media (max-width: 767px)
-    font-size: 2rem
     line-height: 1.25
     text-align: center
     margin: 1rem 0
     word-wrap: break-word
 
 h3
-  font-size: 2.25rem
+  +rfs(48)
   font-weight: 100
   letter-spacing: 0.1rem
   line-height: 1.25
   margin: 0.5rem 0 0.5rem 0
-  @media (min-width: 768px) and (max-width: 991px)
-    font-size: 2rem
   @media (max-width: 767px)
-    font-size: 1.625rem
     line-height: 1.15384615
     text-align: center
     margin: 0.5rem 0
     word-wrap: break-word
 
 h4
-  font-size: 1.75rem
+  +rfs(40)
   font-weight: 100
   line-height: 1.25
   margin: 0.5rem 0 0.5rem 0
-  @media (min-width: 992px) and (max-width: 1199px)
-    font-size: 1.5rem
   @media (min-width: 768px) and (max-width: 991px)
-    font-size: 1.375rem
     line-height: 1.13636364
   @media (max-width: 767px)
-    font-size: 1.375rem
     line-height: 1.13636364
     margin: 1rem 0
     text-align: center

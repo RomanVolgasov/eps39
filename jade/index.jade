@@ -1,0 +1,135 @@
+doctype
+html(lang="ru")
+  head
+
+    // ☢ Служебные ☢
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    meta(name="format-detection" content="telephone=no")
+
+    // ☢ DNS-Предзагрузка ☢
+    title Купить пенополистирол в Калининграде
+    meta(name="description" content="Выгодная цена на пенополистирол (пенопласт) от производителя. Доставка по Калининграду и области. Марки ПСБ-С разной плотности. Для утепления фасада, пола и перегородок")
+    meta(name="keywords" content="пенополистирол, пенопласт, псб-с, купить, цена, калининград, производитель, утепление, klester, ")
+    meta(name="robots" content="all")
+    link(rel="canonical" href="http://penoplast-klester.ru/")
+
+    // ☢ Подключение CSS ☢
+    link(rel="stylesheet" type="text/css" href="css/main.css")
+    // ⚠️ Подключение в web-master ⚠️
+    include _section/_web-master.jade
+
+    // ⚠️ Favicon для всех случаев генерируется тут: http://realfavicongenerator.net/ ⚠️
+    link(rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png")
+
+    // ⚠️ OPEN GRAPH ⚠️
+    meta(property="og:title" content="Купить пенополистирол в Калининграде")
+    meta(property="og:description" content="Выгодная цена на пенополистирол (пенопласт) от производителя. Доставка по Калининграду и области. Марки ПСБ-С разной плотности. Для утепления фасада, пола и перегородок")
+    meta(property="og:image" content="img/eps-item.png")
+    meta(property="og:type" content="website")
+    meta(property="og:url" content="http://penoplast-klester.ru/")
+
+    // © Copyright ©
+    meta(name="author" content="Роман Волгасов")
+    meta(type="text/plain" rel="author" href="http://romanvolgasov.ru/humans.txt")
+
+  body.hyphenate
+
+    .outdated
+
+    .container-fluid.header
+      header.container#top
+        .row
+          .col-xs-12
+            h1.sr-only Пенополистирол в Калининграде оптом и в розницу
+            include _section/_menu/_top-menu-level-1.jade
+            include _section/_block/_address.jade
+    
+    section.container
+      .row
+        .col-xs-12
+          h2.donthyphenate Цена на пенополистирол
+          .col-xs-12.single.slider
+            include _section/_block/_slick-main-top.jade
+
+    section.container-fluid.merge
+      .container
+        .row
+          .col-xs-12
+            h2.donthyphenate Почему пенополистирол?
+          include _section/_block/_merge.jade
+
+    section.container.features
+      .row
+        .col-xs-12
+          h2.donthyphenate Почему мы?
+        include _section/_block/_features.jade
+
+    section.container
+      .row
+        .col-xs-12
+          h2.donthyphenate Производство пенополистирола
+        .col-sm-4.production
+          p «KLESTER System» — это торговая марка, основанная на лучших традициях европейского качества.
+          p Высокие стандарты производства обеспечивают превосходное качество продукта за счёт профессионального уровня и передового технологичного оборудования.
+          p.hidden-sm «KLESTER System» вносит очень важный вклад в повышение качества жизни, используя только экологически чистое и природное сырье для производства пенополистирола.
+          p.hidden-sm Завод по производству пенополистирола предлагает качественный продукт соответсвующий нормам ГОСТ 15588-86. Контроль продукции производится на каждом этапе специалистами лабараторий и исследовательских центров.
+        .col-sm-8
+          include _section/_block/_slick-a-side.jade
+    
+    include _section/_block/_footer/_footer-level-1.jade
+
+    // ☢ Подключаем скрипты ☢
+    include _section/_script/_script-ie.jade
+    script(src="js/jquery-3.2.1.slim.min.js")
+    script(src="js/Hyphenator.js")
+    script(src="js/outdatedbrowser.min.js")
+    script(src="js/slick.min.js")
+    script(src="js/custom.js")
+    script.
+      Hyphenator.run();
+      function addLoadEvent(func) {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+          window.onload = func;
+        } else {
+          window.onload = function() {
+            if (oldonload) {
+              oldonload();
+            }
+          func();
+          }
+        }
+      }
+      //call plugin function after DOM ready
+      addLoadEvent(function(){
+        outdatedBrowser({
+          bgColor: '#f25648',
+          color: '#ffffff',
+          lowerThan: 'transform',
+          languagePath: 'js/lang/ru.html'
+        })
+      });
+      // Slik
+      $(document).ready(function() {
+        $(".single").slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false
+        });
+        $(".vertical").slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        });
+      });
+      (function(){ var widget_id = 'gtx7Ntq4Zr';var d=document;var w=window;function l(){
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    include _section/_script/_metrika.jade

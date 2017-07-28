@@ -15,6 +15,14 @@ __Домен__: penoplast-klester.ru
 
 __Технологии__: JADE -> HTML5, SASS -> CSS3, Bootstrap 3 (сетка), RFS, jQuerry 3.2.1, Slick 1.6.0, MixItUp 2.1.6, Hyphenator, Outdated Browser 1.1.2
 
+## Оценочная стоимость
+
+__Дизайн + Вёрстка__: 24 часа * 600 руб. = 14 400 руб.
+__Копирайтинг__: 2000 руб.
+__SEO__: 8 часов * 600 руб. = 4 800.
+
+__Итого: 21 200 руб.__
+
 ## Валидация по W3C
 
 ![w3c-achievement]

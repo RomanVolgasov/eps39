@@ -1,5 +1,7 @@
 [w3c-achievement]: https://github.com/RomanVolgasov/eps39/blob/master/html/img/achievement/w3c-achievement.png
 [logo]: https://github.com/RomanVolgasov/penoplast-klester.ru/blob/master/html/img/logo.jpg
+[gps-d]: https://github.com/RomanVolgasov/penoplast-klester.ru/blob/master/html/img/achievement/PageSpeed-desktop.jpg
+[gps-m]: https://github.com/RomanVolgasov/penoplast-klester.ru/blob/master/html/img/achievement/PageSpeed-mobile.jpg
 
 ![logo]
 
@@ -26,3 +28,9 @@ __Технологии__: JADE -> HTML5, SASS -> CSS3, Bootstrap 3 (сетка),
 * [Товар](https://github.com/RomanVolgasov/penoplast-klester.ru/blob/master/git-img/catalog-item.jpg)
 * [О компании](https://github.com/RomanVolgasov/penoplast-klester.ru/blob/master/git-img/about.jpg)
 * [Технология](https://github.com/RomanVolgasov/penoplast-klester.ru/blob/master/git-img/tekhnologiya.jpg)
+
+# Скорость сайта Google Page Speed
+
+90/100 – Десктоп и мобильники
+
+![gps-d] ![gps-m]

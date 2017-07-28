@@ -13,7 +13,7 @@ __Тема__: продажа и изготовление пенополисти�
 
 __Домен__: penoplast-klester.ru
 
-__Технологии__: БЭМ, JADE -> HTML5, SASS -> CSS3, Bootstrap 3 (сетка), RFS, jQuerry 3.2.1, Slick 1.6.0, MixItUp 2.1.6, Hyphenator, Outdated Browser 1.1.2
+__Технологии__: БЭМ, JADE -> HTML5, SASS -> CSS3, Bootstrap 3 (сетка), RFS, jQuerry 3.2.1, Slick 1.6.0, MixItUp 2.1.6, Hyphenator, Outdated Browser 1.1.2, jivosite, 2gis map
 
 ## Оценочная стоимость
 

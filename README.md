@@ -6,8 +6,6 @@
 
 # penoplast-klester.ru
 
-![cover]
-
 __Тип__: сайт-визитка.
 
 __Тема__: продажа и изготовление пенополистирола.
@@ -20,33 +18,4 @@ __Технологии__: JADE -> HTML5, SASS -> CSS3, Bootstrap 3 (сетка),
 
 ![w3c-achievement]
 
-Полностью валидный код на всех страницах сайта. 
-
-## Скорость загрузки сайта
-
-### Google PageSpeed
-
-90/100 на мобильной и десктопной версии сайта.
-
-![page-speed-mobile]
-
-![page-speed-desktop]
-
-### GTMetrix
-
-Test Server Region: Vancouver, Canada
-
-Firefox (Desktop) 53.0
-
-PageSpeed Score: A(92%)
-
-YSlow Score: B(82%)
-
-Fully Loaded Time — 17.8s
-
-Total Page Size — 1.16MB
-
-Requests — 63
-
-![gt-metrix]
-
+Полностью валидный код на всех страницах сайта.

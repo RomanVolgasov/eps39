@@ -1,4 +1,7 @@
 [w3c-achievement]: https://github.com/RomanVolgasov/eps39/blob/master/html/img/achievement/w3c-achievement.png
+[logo]: https://github.com/RomanVolgasov/penoplast-klester.ru/blob/master/html/img/logo.jpg
+
+![logo]
 
 # penoplast-klester.ru
 

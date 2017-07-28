@@ -1,8 +1,4 @@
-[cover]: https://github.com/RomanVolgasov/eps39/blob/master/html/img/cover.png
 [w3c-achievement]: https://github.com/RomanVolgasov/eps39/blob/master/html/img/achievement/w3c-achievement.png
-[page-speed-mobile]: https://github.com/RomanVolgasov/eps39/blob/master/html/img/achievement/PageSpeed-mobile.jpg
-[page-speed-desktop]: https://github.com/RomanVolgasov/eps39/blob/master/html/img/achievement/PageSpeed-desktop.jpg
-[gt-metrix]: https://github.com/RomanVolgasov/eps39/blob/master/html/img/achievement/gt-metrix.jpg
 
 # penoplast-klester.ru
 
@@ -21,4 +17,9 @@ __Технологии__: JADE -> HTML5, SASS -> CSS3, Bootstrap 3 (сетка),
 Полностью валидный код на всех страницах сайта.
 
 ## Скриншоты
+
 * [Главная страница](https://github.com/RomanVolgasov/penoplast-klester.ru/blob/master/git-img/main.jpg)
+* [Каталог](https://github.com/RomanVolgasov/penoplast-klester.ru/blob/master/git-img/catalog.jpg)
+* [Товар](https://github.com/RomanVolgasov/penoplast-klester.ru/blob/master/git-img/catalog-item.jpg)
+* [О компании](https://github.com/RomanVolgasov/penoplast-klester.ru/blob/master/git-img/about.jpg)
+* [Технология](https://github.com/RomanVolgasov/penoplast-klester.ru/blob/master/git-img/tekhnologiya.jpg)

@@ -9,6 +9,10 @@ ErrorDocument 404 /404.html
   # RewriteCond %{HTTP_HOST} !^www\. [NC]
   # RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
   # www to non www
+  # Убираем index.html в конце УРЛа
+  RewriteCond %{REQUEST_METHOD} =GET
+  RewriteCond %{REQUEST_URI} ^(.*)/index\.html$
+  RewriteRule ^(.*)$ %1/ [R=301,L]
   RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
   RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 </IfModule>

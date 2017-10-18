@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE yml_catalog SYSTEM "shops.dtd">
-<yml_catalog date="2017-07-25 10:57">
+<yml_catalog date="2017-10-10 11:04">
   <shop>
     <name>Райве-Калининград</name>
     <company>Пенополистирол — собственное производство</company>
@@ -17,7 +17,7 @@
 
       <offer id="1" type="vendor.model" available="true">
         <url>http://penoplast-klester.ru/catalog/penopolistirol-15-tu/</url>
-        <price>1299</price>
+        <price>1099</price>
         <currencyId>RUR</currencyId>
         <categoryId>1</categoryId>
         <delivery>true</delivery>
@@ -39,7 +39,7 @@
 
       <offer id="4" type="vendor.model" available="true">
         <url>http://penoplast-klester.ru/catalog/penopolistirol-15-gost/</url>
-        <price>1699</price>
+        <price>1490</price>
         <currencyId>RUR</currencyId>
         <categoryId>1</categoryId>
         <delivery>true</delivery>
@@ -61,7 +61,7 @@
 
       <offer id="8" type="vendor.model" available="true">
         <url>http://penoplast-klester.ru/catalog/penopolistirol-25-tu/</url>
-        <price>1999</price>
+        <price>1690</price>
         <currencyId>RUR</currencyId>
         <categoryId>1</categoryId>
         <delivery>true</delivery>
@@ -83,7 +83,7 @@
 
       <offer id="12" type="vendor.model" available="true">
         <url>http://penoplast-klester.ru/catalog/penopolistirol-25-gost/</url>
-        <price>2199</price>
+        <price>1890</price>
         <currencyId>RUR</currencyId>
         <categoryId>1</categoryId>
         <delivery>true</delivery>
@@ -105,7 +105,7 @@
 
       <offer id="16" type="vendor.model" available="true">
         <url>http://penoplast-klester.ru/catalog/penopolistirol-35-tu/</url>
-        <price>2799</price>
+        <price>2490</price>
         <currencyId>RUR</currencyId>
         <categoryId>1</categoryId>
         <delivery>true</delivery>

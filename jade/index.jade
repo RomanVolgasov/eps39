@@ -9,8 +9,8 @@ html(lang="ru")
     meta(name="format-detection" content="telephone=no")
 
     // ☢ DNS-Предзагрузка ☢
-    title Пенополистирол в Калининграде
-    meta(name="description" content="Выгодная цена на пенополистирол (пенопласт) от производителя. Доставка по Калининграду и области. Марки ПСБ-С разной плотности. Для утепления фасада, пола и перегородок")
+    title Пенополистирол в Калининграде цена
+    meta(name="description" content="Купить пенополистирол в калининграде по цене от производителя. Выгодная цена на пенопласт по Калининграду.")
     meta(name="keywords" content="пенополистирол, пенопласт, псб-с, купить, цена, калининград, производитель, утепление, klester, ")
     meta(name="robots" content="all")
     link(rel="canonical" href="http://penoplast-klester.ru/")
@@ -44,7 +44,7 @@ html(lang="ru")
       header.container#top
         .row
           .col-xs-12
-            h1.sr-only Пенополистирол в Калининграде
+            h1.sr-only Пенополистирол в Калининграде цена
             include _section/_menu/_top-menu-level-1.jade
             include _section/_block/_address.jade
     
@@ -121,7 +121,10 @@ html(lang="ru")
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: true,
-          arrows: false
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 2500,
+          pauseOnFocus: true
         });
         $(".vertical").slick({
           infinite: true,

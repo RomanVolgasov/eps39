@@ -61,7 +61,7 @@
 
       <offer id="8" type="vendor.model" available="true">
         <url>http://penoplast-klester.ru/catalog/penopolistirol-25-tu/</url>
-        <price>1690</price>
+        <price>1890</price>
         <currencyId>RUR</currencyId>
         <categoryId>1</categoryId>
         <delivery>true</delivery>
@@ -83,7 +83,7 @@
 
       <offer id="12" type="vendor.model" available="true">
         <url>http://penoplast-klester.ru/catalog/penopolistirol-25-gost/</url>
-        <price>1890</price>
+        <price>2090</price>
         <currencyId>RUR</currencyId>
         <categoryId>1</categoryId>
         <delivery>true</delivery>

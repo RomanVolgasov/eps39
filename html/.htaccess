@@ -18,18 +18,72 @@ ErrorDocument 404 /404.html
 </IfModule>
 
 # Включаем кэш в браузерах посетителей
-#<ifModule mod_headers.c>
-#  <FilesMatch "\.(html|htm)$">
-#    Header set Cache-Control "max-age=86400"
-#  </FilesMatch>
-#  <FilesMatch "\.(js|css|txt)$">
-#    Header set Cache-Control "max-age=604800"
-#  </FilesMatch>
-#  <FilesMatch "\.(flv|swf|ico|gif|jpg|jpeg|png|svg|woff)$">
-#    Header set Cache-Control "max-age=2592000"
-#  </FilesMatch>
-#</IfModule>
+<ifModule mod_headers.c>
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "max-age=0"
+  </FilesMatch>
+  <FilesMatch "\.(js|css|txt)$">
+    Header set Cache-Control "max-age=0"
+  </FilesMatch>
+  <FilesMatch "\.(flv|swf|ico|gif|jpg|jpeg|png|svg|woff)$">
+    Header set Cache-Control "max-age=2592000"
+  </FilesMatch>
+</IfModule>
 
 <IfModule mod_dir.c>
   DirectoryIndex index.html
 </IfModule>
+
+Order Deny,Allow
+Deny from 95.55.213.2
+Deny from 85.115.224.152
+Deny from 85.115.224.143
+Deny from 85.115.224.133
+Deny from 83.219.146.88
+Deny from 78.36.220.99
+Deny from 78.155.186.29
+Deny from 66.249.93.90
+Deny from 66.102.9.28
+Deny from 66.102.9.26
+Deny from 66.102.9.24
+Deny from 37.140.189.204
+Deny from 188.170.75.161
+Deny from 178.68.51.91
+Deny from 178.210.19.40
+Deny from 176.59.0.116
+Deny from 109.239.221.187
+Deny from 85.115.224.141
+Deny from 83.219.146.104
+Deny from 66.249.93.72
+Deny from 66.249.93.70
+Deny from 62.33.118.28
+Deny from 37.146.225.68
+Deny from 176.59.2.188
+Deny from 78.36.219.13
+Deny from 91.109.150.135
+Deny from 85.115.224.147
+Deny from 217.66.152.192
+Deny from 31.200.204.166
+Deny from 85.115.224.134
+Deny from 95.55.197.39
+Deny from 95.55.252.55
+Deny from 195.135.215.110
+Deny from 95.55.194.221
+Deny from 66.102.9.134
+Deny from 92.100.120.3
+Deny from 77.182.37.109
+Deny from 66.102.9.136
+Deny from 109.239.218.246
+Deny from 85.115.224.144
+Deny from 83.219.147.236
+Deny from 85.115.224.150
+Deny from 78.81.163.186
+Deny from 85.115.224.145
+Deny from 95.52.92.86
+Deny from 95.52.86.77
+Deny from 66.102.9.134
+Deny from 95.55.231.48
+Deny from 82.145.220.167
+Deny from 217.66.152.225
+Deny from 212.33.9.94
+# Deny from 83.219.136.133

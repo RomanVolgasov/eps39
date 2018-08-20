@@ -2,10 +2,11 @@
   span.top-nav__logo
   nav.top-nav__list#navigation
     h2.sr-only Навигация по сайту
-    a.top-nav__item.-link(href="/" title="пенополистирол купить в калининграде") Главная
-    a.top-nav__item.-link(href="/catalog/" title="полистирол в калининграде купить") Каталог
+    a.top-nav__item.-link(href="/" title="Главная") Главная
+    //- a.top-nav__item.-link(href="/catalog/" title="полистирол в калининграде купить") Каталог
+    a.top-nav__item.-link(href="http://klester39.ru/" title="Сухие строительные смеси") Сухие смеси
     a.top-nav__item.-link(href="/about/" title="производство пенополистирола") О компании
-    a.top-nav__item.-link(href="/tekhnologiya/" title="технология утепления пенополистиролом") Технология
-    button.top-nav__item.top-nav__item_btn(type="button" onclick="jivo_api.open();") Обратная связь
+    //- a.top-nav__item.-link(href="/tekhnologiya/" title="технология утепления пенополистиролом") Технология
+    a.top-nav__item.top-nav__item_btn(href="#chat" onclick="jivo_api.open();") Обратная связь
   button.toggle(data-collapse data-target="#navigation")
     span.icon

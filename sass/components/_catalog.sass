@@ -2,10 +2,8 @@ $catalog__dark-gray: #c6c6c6
 $catalog__gray: #E0E0E0
 $catalog__white: #FAFAFA
 
-figure
+.catalog-item__figure
   margin: 1rem 2rem 0
-  @media (max-width: 767px)
-    margin: 0
 
 .catalog-list
   align-items: center
@@ -45,8 +43,11 @@ figure
     text-align: center
 
 .catalog-item__figure
-  border-radius: 5px
+  border-radius: 500px
   position: relative
+  @media (max-width: 767px)
+    margin: 0
+    max-width: 240px
 
 .catalog-item__caption
   +rfs(30)
